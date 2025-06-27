@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Welcome to XpertScan
+{% endblock %}
+
+{% block content %}
+  <div class="container mt-5">
+    <div class="text-center">
+      <h1>Welcome to XpertScan</h1>
+      <p class="lead">Automated X-ray Image Analysis.</p>
+      <div class="mt-4">
+        <a href="{{ url_for('home') }}" class="btn btn-success btn-lg" id="submit-button" type="submit" >Start Analyzing</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
